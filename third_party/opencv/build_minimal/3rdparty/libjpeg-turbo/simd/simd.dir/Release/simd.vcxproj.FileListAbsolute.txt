@@ -1,0 +1,1 @@
+C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\libjpeg-turbo\simd\simd.dir\Release\simd.lib

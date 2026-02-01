@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jccolor-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jccolor-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jcgray-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jcgray-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jchuff-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jcphuff-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jcsample-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jcsample-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdcolor-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdcolor-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdmerge-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdmerge-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdsample-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jdsample-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jfdctflt-sse.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jfdctfst-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jfdctint-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jfdctint-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jidctflt-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jidctfst-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jidctint-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jidctint-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jidctred-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jquantf-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jquanti-avx2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jquanti-sse2.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\19f77024773e3a727d4156e7c26297ee\jsimdcpu.asm.obj.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\ee2a26e24a008d51fa51275b936c28f9\simd-objs.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\libjpeg-turbo\simd\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\libjpeg-turbo\simd\CMakeFiles\simd-objs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{279D7445-DEA5-35FB-AB6D-9E4821071000}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

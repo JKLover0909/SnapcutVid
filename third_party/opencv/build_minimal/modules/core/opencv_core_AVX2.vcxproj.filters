@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\mathfuncs_core.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\stat.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\arithm.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\convert.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\convert_scale.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\count_non_zero.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\has_non_zero.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\matmul.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\mean.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\merge.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\split.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\sum.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\norm.avx2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0EAC2FC2-9BF8-32D8-BF9C-AFF358732C16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(NASMBeforeTargets)' == '' and '$(NASMAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <NASMBeforeTargets>Midl</NASMBeforeTargets>
+    <NASMAfterTargets>CustomBuild</NASMAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <NASM>
+      <OutputFormat>$(IntDir)%(FileName).obj</OutputFormat>
+      <Outputswitch>0</Outputswitch>
+      <CompilerNasm>C:/Users/sonng/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/bin/nasm.exe</CompilerNasm>
+      <PackAlignmentBoundary>0</PackAlignmentBoundary>
+      <CommandLineTemplate>"%(CompilerNasm)" [AllOptions] [AdditionalOptions] "%(FullPath)"</CommandLineTemplate>
+      <ExecutionDescription>Assembling %(Filename)%(Extension)</ExecutionDescription>
+    </NASM>
+  </ItemDefinitionGroup>
+</Project>

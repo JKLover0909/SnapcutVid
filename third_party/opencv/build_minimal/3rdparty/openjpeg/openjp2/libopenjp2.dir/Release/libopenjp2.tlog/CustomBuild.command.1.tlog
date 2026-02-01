@@ -1,0 +1,10 @@
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\SOURCES\3RDPARTY\OPENJPEG\OPENJP2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/openjpeg/openjp2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

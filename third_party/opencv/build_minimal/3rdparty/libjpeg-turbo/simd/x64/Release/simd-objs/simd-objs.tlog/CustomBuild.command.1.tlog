@@ -1,0 +1,288 @@
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCCOLOR-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jccolor-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jccolor-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCCOLOR-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jccolor-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jccolor-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCGRAY-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jcgray-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jcgray-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCGRAY-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jcgray-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jcgray-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCHUFF-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jchuff-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jchuff-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCPHUFF-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jcphuff-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jcphuff-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCSAMPLE-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jcsample-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jcsample-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JCSAMPLE-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jcsample-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jcsample-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDCOLOR-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdcolor-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdcolor-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDCOLOR-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdcolor-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdcolor-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDMERGE-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdmerge-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdmerge-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDMERGE-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdmerge-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdmerge-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDSAMPLE-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdsample-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdsample-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JDSAMPLE-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jdsample-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jdsample-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JFDCTFLT-SSE.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jfdctflt-sse.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jfdctflt-sse.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JFDCTFST-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jfdctfst-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jfdctfst-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JFDCTINT-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jfdctint-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jfdctint-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JFDCTINT-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jfdctint-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jfdctint-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JIDCTFLT-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jidctflt-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jidctflt-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JIDCTFST-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jidctfst-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jidctfst-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JIDCTINT-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jidctint-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jidctint-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JIDCTINT-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jidctint-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jidctint-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JIDCTRED-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jidctred-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jidctred-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JQUANTF-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jquantf-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jquantf-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JQUANTI-AVX2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jquanti-avx2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jquanti-avx2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JQUANTI-SSE2.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jquanti-sse2.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jquanti-sse2.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\19F77024773E3A727D4156E7C26297EE\JSIMDCPU.ASM.OBJ.RULE
+setlocal
+C:\Users\sonng\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/nasm/" -I"C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/" C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/3rdparty/libjpeg-turbo/simd/x86_64/jsimdcpu.asm -oC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/Release/jsimdcpu.asm.obj
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\EE2A26E24A008D51FA51275B936C28F9\SIMD-OBJS.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\SOURCES\3RDPARTY\LIBJPEG-TURBO\SIMD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/3rdparty/libjpeg-turbo/simd/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

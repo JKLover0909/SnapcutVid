@@ -1,0 +1,969 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62517A1D-DB2F-33C7-A18F-9071F0CC4DC6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_core</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_core.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_core4120d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_core.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_core4120</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencv_core.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\lib\Debug\opencv_core4120d.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";CVAPI_EXPORTS</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\3rdparty\lib\Debug\ipphal.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\lib\Debug\ittnotifyd.lib;..\..\3rdparty\lib\Debug\ipphal.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/lib/Debug/opencv_core4120d.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/bin/Debug/opencv_core4120d.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.12</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencv_core.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\lib\Release\opencv_core4120.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;OPENCV_WITH_ITT=1;OPENCV_ALLOCATOR_STATS_COUNTER_TYPE=long long;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";CVAPI_EXPORTS</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\3rdparty\ittnotify\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\3rdparty\lib\Release\ipphal.lib;..\..\3rdparty\lib\Release\zlib.lib;..\..\3rdparty\lib\Release\ittnotify.lib;..\..\3rdparty\lib\Release\ipphal.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/lib/Release/opencv_core4120.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/bin/Release/opencv_core4120.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.12</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\CMakeFiles\d9d45f7231b6e5d6d1720e297f85438d\opencl_kernels_core.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Processing OpenCL kernels (core)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=core -DCL_DIR=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/core/src/opencl -DOUTPUT=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencl_kernels_core.cpp -P C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\arithm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\convert.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copymakeborder.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copyset.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\fft.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\flip.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\gemm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\halfconvert.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\inrange.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\intel_gemm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\lut.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\meanstddev.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\minmaxloc.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mixchannels.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mulspectrums.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\normalize.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce2.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\repeat.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\set_identity.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\split_merge.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\transpose.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencl_kernels_core.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Processing OpenCL kernels (core)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=core -DCL_DIR=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/core/src/opencl -DOUTPUT=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencl_kernels_core.cpp -P C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\arithm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\convert.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copymakeborder.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copyset.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\fft.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\flip.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\gemm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\halfconvert.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\inrange.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\intel_gemm.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\lut.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\meanstddev.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\minmaxloc.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mixchannels.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mulspectrums.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\normalize.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce2.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\repeat.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\set_identity.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\split_merge.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\transpose.cl;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencl_kernels_core.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\vs_version.rc.in;C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\vs_version.rc.in;C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\CMakeFiles\opencv_core.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencv_core.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/opencv_core.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\async.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\base.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\bindings_utils.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\check.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\core.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\core_c.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\block.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\border_interpolate.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\color.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\common.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\datamov_utils.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\color_detail.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\reduce.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\reduce_key_val.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\transform_detail.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\type_traits_detail.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\detail\vec_distance_detail.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\dynamic_smem.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\emulation.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\filters.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\funcattrib.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\functional.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\limits.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\reduce.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\saturate_cast.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\scan.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\simd_functions.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\transform.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\type_traits.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\utility.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\vec_distance.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\vec_math.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\vec_traits.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\warp.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\warp_reduce.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda\warp_shuffle.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cv_cpu_dispatch.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cv_cpu_helper.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\cvstd_wrapper.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\detail\async_promise.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\detail\dispatch_helper.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\detail\exception_ptr.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\dualquaternion.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\dualquaternion.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\hal.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\interface.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_avx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_avx512.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_cpp.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_forward.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_lasx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_legacy_ops.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_lsx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_math.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_msa.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_neon.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_rvv071.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_rvv_scalable.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_sse.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_sse_em.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_vsx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\intrin_wasm.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\msa_macros.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\hal\simd_utils.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\matx.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\ocl_defs.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\opencl_info.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\opencl_svm.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clblas.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clfft.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_clblas.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_clfft.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_core.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_gl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_20.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_definitions.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opencl\runtime\opencl_svm_hsa_extension.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\parallel\backend\parallel_for.openmp.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\parallel\backend\parallel_for.tbb.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\parallel\parallel_backend.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\private.cuda.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\quaternion.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\quaternion.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\simd_intrinsics.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\softfloat.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\types.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\types_c.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\allocator_stats.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\allocator_stats.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\buffer_area.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\configuration.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\filesystem.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\filesystem.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\fp_control.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\fp_control_utils.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\instrumentation.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\lock.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\logger.defines.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\logger.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\logtag.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\plugin_loader.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\tls.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\trace.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\utils\trace.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\version.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\opencv2\core\vsx_utils.hpp" />
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\version_string.inc">
+    </None>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\algorithm.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\alloc.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);HAVE_MALLOC_H=1;HAVE_WIN32_ALIGNED_MALLOC=1</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);HAVE_MALLOC_H=1;HAVE_WIN32_ALIGNED_MALLOC=1</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\arithm.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\arithm.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\array.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\async.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\batch_distance.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\bindings_utils.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\buffer_area.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\channels.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\check.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\command_line_parser.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\conjugate_gradient.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert_c.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert_scale.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\copy.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\count_non_zero.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\cuda_gpu_mat.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\cuda_gpu_mat_nd.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\cuda_host_mem.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\cuda_info.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\cuda_stream.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\datastructs.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\directx.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\downhill_simplex.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\dxt.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\gl_core_3_1.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\glob.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\hal_internal.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\has_non_zero.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\kmeans.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\lapack.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\lda.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\logger.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\lpsolver.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\lut.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mathfuncs.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mathfuncs_core.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matmul.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_c.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_decomp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_expressions.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_iterator.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_operations.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_sparse.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_transform.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matrix_wrap.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mean.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\merge.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\minmax.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\norm.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\ocl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\opencl_clblas.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\opencl_clfft.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\opencl_core.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opengl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\out.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\ovx.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel.cpp">
+      <ObjectFileName>$(IntDir)/src/parallel.cpp.obj</ObjectFileName>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\parallel.cpp">
+      <ObjectFileName>$(IntDir)/src/parallel/parallel.cpp.obj</ObjectFileName>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);PARALLEL_ENABLE_PLUGINS=1;DEBUG_POSTFIX=d</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);PARALLEL_ENABLE_PLUGINS=1;DEBUG_POSTFIX=d</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\parallel_openmp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\parallel_tbb.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel_impl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\pca.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_base64_encoding.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_json.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_types.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_xml.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_yml.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\rand.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\softfloat.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\split.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\stat.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\stat_c.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\stl.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\sum.dispatch.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\system.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\tables.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\trace.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\types.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\umatrix.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\datafile.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\filesystem.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\logtagconfigparser.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\logtagmanager.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\samples.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\va_intel.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\arithm.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\convert.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copymakeborder.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\copyset.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\fft.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\flip.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\gemm.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\halfconvert.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\inrange.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\intel_gemm.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\lut.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\meanstddev.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\minmaxloc.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mixchannels.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\mulspectrums.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\normalize.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\reduce2.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\repeat.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\set_identity.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\split_merge.cl">
+    </None>
+    <None Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\transpose.cl">
+    </None>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencl_kernels_core.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/core/CMakeFiles/opencv_core.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencl_kernels_core.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\arithm.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\arithm_ipp.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\bufferpool.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\convert_scale.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\count_non_zero.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\directx.inc.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\gl_core_3_1.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\hal_internal.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\has_non_zero.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\intel_gpu_gemm.inl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mathfuncs.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mathfuncs_core.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\matmul.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\mean.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\merge.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\norm.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\ocl_disabled.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_clblas_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_clfft_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_core_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_core_static_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_gl_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_gl_static_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\opencl\runtime\runtime_common.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\factory_parallel.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\parallel.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\plugin_parallel_api.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\plugin_parallel_wrapper.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\registry_parallel.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel\registry_parallel.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\parallel_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_base64_encoding.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\persistence_impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\split.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\stat.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\stat.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\sum.simd.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\umatrix.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\logtagconfig.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\logtagconfigparser.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\logtagmanager.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\utils\plugin_loader.impl.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\src\va_wrapper.impl.hpp" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\arithm.sse4_1.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\matmul.sse4_1.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_1.dir\$(Configuration)\norm.sse4_1.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_2.dir\$(Configuration)\stat.sse4_2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX.dir\$(Configuration)\mathfuncs_core.avx.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX.dir\$(Configuration)\norm.avx.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\mathfuncs_core.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\stat.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\arithm.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\convert.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\convert_scale.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\count_non_zero.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\has_non_zero.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\matmul.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\mean.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\merge.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\split.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\sum.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.dir\$(Configuration)\norm.avx2.obj" />
+    <Object Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX512_SKX.dir\$(Configuration)\matmul.avx512_skx.obj" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\cvconfig.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\vs_version.rc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ResourceCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\CMakeFiles\opencv_core.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\CMakeFiles\opencv_core.dir\Release\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\ZERO_CHECK.vcxproj">
+      <Project>{910BC555-8D57-319F-AC9E-4F3A80A86532}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\hal\ipp\ipphal.vcxproj">
+      <Project>{C5FB8468-86CE-3BB9-BA50-A314683624B5}</Project>
+      <Name>ipphal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{CE72F6CE-6FC3-31A1-B1EF-8873D9A15B43}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{DC36FF05-D596-37C0-8611-9C478A288D86}</Project>
+      <Name>ittnotify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{63129D36-56C1-3D59-A128-0BA42C19BB98}</Project>
+      <Name>opencv_core_AVX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{D83599C1-94CD-3EB8-B26E-4126FCF06942}</Project>
+      <Name>opencv_core_AVX2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_AVX512_SKX.vcxproj">
+      <Project>{31BFBC67-9AD5-3CA4-A137-0983526EDDA1}</Project>
+      <Name>opencv_core_AVX512_SKX</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{412FB811-4EB3-33EF-B7FF-D0876EF4ACDD}</Project>
+      <Name>opencv_core_SSE4_1</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{37508BCD-736D-32A2-9810-67330EE2F3DA}</Project>
+      <Name>opencv_core_SSE4_2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\zlib\zlib.vcxproj">
+      <Project>{3FC9B6BF-8BA1-3A1A-BDB4-109353EC7716}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

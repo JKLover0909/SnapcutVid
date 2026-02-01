@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61B2A534-7CD4-30C7-9222-EBF01D2E0F10}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_videoio</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\opencv_videoio.dir\nasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_videoio.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">opencv_videoio4120d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_videoio.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">opencv_videoio4120</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/opencv_videoio.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR="Debug";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\lib\Debug\opencv_videoio4120d.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR="Debug";CVAPI_EXPORTS</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\opencv_imgcodecs4120d.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\3rdparty\lib\Debug\ipphal.lib;..\..\lib\Debug\opencv_imgproc4120d.lib;..\..\lib\Debug\opencv_core4120d.lib;..\..\3rdparty\lib\Debug\ippiwd.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/lib/Debug/opencv_videoio4120d.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/bin/Debug/opencv_videoio4120d.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.12</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4512;4589;4819</DisableSpecificWarnings>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/opencv_videoio.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR="Release";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\lib\Release\opencv_videoio4120.pdb</ProgramDataBaseFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <NASM>
+      <IncludePaths>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include\;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\;%(IncludePaths)</IncludePaths>
+      <AdditionalOptions>-f</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;ENABLE_PLUGINS;_VARIADIC_MAX=10;_WIN32_WINNT=0x0601;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__OPENCV_BUILD=1;HAVE_DSHOW;HAVE_MSMF;HAVE_MSMF_DXVA;HAVE_OBSENSOR;HAVE_OBSENSOR_MSMF;CMAKE_INTDIR="Release";CVAPI_EXPORTS</PreprocessorDefinitions>
+    </NASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\hal\ipp\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\icv\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippicv\ippicv_win\iw\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\core\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgproc\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\imgcodecs\include;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\opencv_imgcodecs4120.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;..\..\3rdparty\lib\Release\ipphal.lib;..\..\lib\Release\opencv_imgproc4120.lib;..\..\lib\Release\opencv_core4120.lib;..\..\3rdparty\lib\Release\ippiw.lib;..\..\3rdparty\ippicv\ippicv_win\icv\lib\intel64\ippicvmt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <DataExecutionPrevention></DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>libc;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImportLibrary>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/lib/Release/opencv_videoio4120.lib</ImportLibrary>
+      <LinkErrorReporting></LinkErrorReporting>
+      <ProgramDataBaseFile>C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/bin/Release/opencv_videoio4120.pdb</ProgramDataBaseFile>
+      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <SubSystem></SubSystem>
+      <Version>4.12</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/videoio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\dllmain.cpp.in;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\cmake\plugin.cmake;C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/videoio/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\dllmain.cpp.in;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\cmake\plugin.cmake;C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.props.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\CMakeFiles\opencv_videoio.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/opencv_videoio.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/opencv_videoio.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\container_avi.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\legacy\constants_c.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\registry.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\utils.private.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\videoio.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\include\opencv2\videoio\videoio_c.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_dshow.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor\obsensor_stream_channel_interface.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor\obsensor_stream_channel_msmf.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor\obsensor_uvc_stream_channel.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor_capture.hpp" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\precomp.hpp" />
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\videoio_registry.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\videoio_c.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_images.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_mjpeg_encoder.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_mjpeg_decoder.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\backend_plugin.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(PreprocessorDefinitions);DEBUG_POSTFIX=d</PreprocessorDefinitions>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(PreprocessorDefinitions);DEBUG_POSTFIX=d</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\backend_static.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\container_avi.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_dshow.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_msmf.hpp" />
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_msmf.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor_capture.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor\obsensor_uvc_stream_channel.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\sources\modules\videoio\src\cap_obsensor\obsensor_stream_channel_msmf.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\cvconfig.h" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\opencv2\opencv_modules.hpp" />
+    <ResourceCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\vs_version.rc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ResourceCompile>
+    <ClCompile Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\opencv_videoio_main.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/videoio/CMakeFiles/opencv_videoio.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\CMakeFiles\opencv_videoio.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\videoio\CMakeFiles\opencv_videoio.dir\Release\cmake_pch.hxx" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\ZERO_CHECK.vcxproj">
+      <Project>{910BC555-8D57-319F-AC9E-4F3A80A86532}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\hal\ipp\ipphal.vcxproj">
+      <Project>{C5FB8468-86CE-3BB9-BA50-A314683624B5}</Project>
+      <Name>ipphal</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{CE72F6CE-6FC3-31A1-B1EF-8873D9A15B43}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core.vcxproj">
+      <Project>{62517A1D-DB2F-33C7-A18F-9071F0CC4DC6}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{54FC8588-DCE7-3323-850B-7A6CBC220CE8}</Project>
+      <Name>opencv_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{11ED9313-C144-3130-903B-AA9BD6AF50FB}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="C:\Program Files\CMake\share\cmake-4.1\Templates\MSBuild\nasm.targets" />
+  </ImportGroup>
+</Project>

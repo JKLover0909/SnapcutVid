@@ -1,0 +1,1 @@
+C:\Users\sonng\Code\SnapcutVid\third_party\opencv\build_minimal\modules\core\opencv_core_SSE4_1.dir\Release\opencv_core_SSE4_1.lib

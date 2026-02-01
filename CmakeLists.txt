@@ -9,9 +9,10 @@ if(MSVC)
 endif()
 
 # ====== OpenCV path ======
-set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/third_party/opencv/build")
+# ====== OpenCV path ======
+set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/third_party/opencv/build_minimal")
 
-find_package(OpenCV REQUIRED)
+find_package(OpenCV REQUIRED COMPONENTS core videoio imgcodecs)
 
 # Build as Windows GUI application (not console)
 add_executable(extractor WIN32
@@ -27,9 +28,15 @@ target_compile_definitions(extractor PRIVATE UNICODE _UNICODE)
 # Copy DLL sau khi build
 add_custom_command(TARGET extractor POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${OpenCV_DIR}/x64/vc16/bin/opencv_world4120.dll"
+        "${OpenCV_DIR}/bin/Release/opencv_core4120.dll"
         $<TARGET_FILE_DIR:extractor>
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${OpenCV_DIR}/x64/vc16/bin/opencv_videoio_ffmpeg4120_64.dll"
+        "${OpenCV_DIR}/bin/Release/opencv_imgcodecs4120.dll"
+        $<TARGET_FILE_DIR:extractor>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${OpenCV_DIR}/bin/Release/opencv_videoio4120.dll"
+        $<TARGET_FILE_DIR:extractor>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${OpenCV_DIR}/bin/Release/opencv_imgproc4120.dll"
         $<TARGET_FILE_DIR:extractor>
 )

@@ -1,0 +1,20 @@
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\08D0370B5FBBA65B31252A0E9E79DD23\OPENCL_KERNELS_IMGPROC.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=imgproc -DCL_DIR=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/modules/imgproc/src/opencl -DOUTPUT=C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/imgproc/opencl_kernels_imgproc.cpp -P C:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\SOURCES\MODULES\IMGPROC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/modules/imgproc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

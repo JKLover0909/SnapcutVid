@@ -1,0 +1,10 @@
+^C:\USERS\SONNG\CODE\SNAPCUTVID\THIRD_PARTY\OPENCV\BUILD_MINIMAL\CMAKEFILES\14A12FA9F28A8ED25F981BB855B3958C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/sonng/Code/SnapcutVid/third_party/opencv/sources -BC:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sonng/Code/SnapcutVid/third_party/opencv/build_minimal/OpenCV.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
