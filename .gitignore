@@ -1,0 +1,75 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+# Note: We allow DLLs in third_party if they are part of the repo, but ignore build output DLLs
+# *.dll
+# *.lib
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+# *.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+compile_commands.json
+
+# Build directories
+build/
+bin/
+lib/
+out/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.ncb
+*.history
+
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Video files (large input files)
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Agent artifacts
+.gemini/
+.agent/
+
+# Output frames
+frames/

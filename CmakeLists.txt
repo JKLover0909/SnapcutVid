@@ -1,0 +1,35 @@
+cmake_minimum_required(VERSION 3.20)
+project(video_frame_extractor LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+if(MSVC)
+    add_compile_options(/utf-8)
+endif()
+
+# ====== OpenCV path ======
+set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/third_party/opencv/build")
+
+find_package(OpenCV REQUIRED)
+
+# Build as Windows GUI application (not console)
+add_executable(extractor WIN32
+    src/video_frame_extractor.cpp
+)
+
+target_include_directories(extractor PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(extractor PRIVATE ${OpenCV_LIBS} comctl32 ole32 shell32)
+
+# Enable Unicode
+target_compile_definitions(extractor PRIVATE UNICODE _UNICODE)
+
+# Copy DLL sau khi build
+add_custom_command(TARGET extractor POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${OpenCV_DIR}/x64/vc16/bin/opencv_world4120.dll"
+        $<TARGET_FILE_DIR:extractor>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${OpenCV_DIR}/x64/vc16/bin/opencv_videoio_ffmpeg4120_64.dll"
+        $<TARGET_FILE_DIR:extractor>
+)
