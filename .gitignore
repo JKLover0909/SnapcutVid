@@ -73,3 +73,7 @@ Desktop.ini
 
 # Output frames
 frames/
+
+# Build logs (MSBuild output, chứa path máy cá nhân)
+build_log.txt
+*.log
